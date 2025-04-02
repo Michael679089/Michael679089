@@ -1,4 +1,8 @@
-## Hi there 👋
+# 🔭 I’m currently working on ...
+- Hospital and Medical App. 
+
+# 📫 How to reach me:
+- work email: michaeljacobdelossantos94@gmail.com
 
 <!--
 **Michael679089/Michael679089** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
