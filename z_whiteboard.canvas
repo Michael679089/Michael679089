@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    {
+      "type": "file",
+      "id": "def9a923-300a-4b5c-ac58-e17f79db2213",
+      "x": -220,
+      "y": 260,
+      "width": 480,
+      "height": 380,
+      "file": "package.json"
+    },
+    {
+      "type": "text",
+      "id": "c11367cc-86ae-4886-9fbf-1e1951de0f58",
+      "x": -140,
+      "y": 100,
+      "width": 319,
+      "height": 116,
+      "text": "# Tools\nThese are the tools we have downloaded."
+    }
+  ],
+  "edges": [
+    {
+      "id": "e3575e26-3730-49d6-bee0-883992da7e00",
+      "fromNode": "c11367cc-86ae-4886-9fbf-1e1951de0f58",
+      "fromSide": "bottom",
+      "toNode": "def9a923-300a-4b5c-ac58-e17f79db2213",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "style": "solid",
+      "shape": "stepped"
+    }
+  ]
+}
