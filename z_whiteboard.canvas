@@ -17,6 +17,24 @@
       "width": 319,
       "height": 116,
       "text": "# Tools\nThese are the tools we have downloaded."
+    },
+    {
+      "type": "file",
+      "id": "020bb821-49d6-4a9f-8140-5d94426c3d81",
+      "x": 840,
+      "y": 420,
+      "width": 500,
+      "height": 300,
+      "file": "node_modules/astro/tsconfigs/strict.json"
+    },
+    {
+      "type": "text",
+      "id": "33f8f980-a750-4d0f-a408-2eca5b498224",
+      "x": 1400,
+      "y": 420,
+      "width": 600,
+      "height": 88,
+      "text": "    // Enable strict mode. This enables a few options at a time, see https://www.typescriptlang.org/tsconfig#strict for a list.\n"
     }
   ],
   "edges": [
@@ -26,6 +44,16 @@
       "fromSide": "bottom",
       "toNode": "def9a923-300a-4b5c-ac58-e17f79db2213",
       "toSide": "top",
+      "toEnd": "arrow",
+      "style": "solid",
+      "shape": "stepped"
+    },
+    {
+      "id": "1daf2122-ebc1-48ce-b0bc-119a0e0f3f1b",
+      "fromNode": "33f8f980-a750-4d0f-a408-2eca5b498224",
+      "fromSide": "left",
+      "toNode": "020bb821-49d6-4a9f-8140-5d94426c3d81",
+      "toSide": "right",
       "toEnd": "arrow",
       "style": "solid",
       "shape": "stepped"
