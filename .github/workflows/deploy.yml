@@ -27,8 +27,16 @@ jobs:
           role-to-assume: arn:aws:iam::941116500527:role/DynamoDB_ReadAllOnlyAccess_for_project-lists_nosql_table
           aws-region: us-east-1
       
-      - name: Install, build, and upload your site
-        uses: withastro/action@v5
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Build Astro site
+        run: npm run build
 
   deploy:
     needs: build
