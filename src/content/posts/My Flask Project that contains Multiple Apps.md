@@ -13,6 +13,7 @@ aliases:
 **Source:** [Multi-System_Flask-App on GitHub](https://github.com/Michael679089/Multi-System_Flask-App)
 
 
+
 # Rebuilding a Multi-System Web App with Flask: A Journey from PHP to Python
 
 In 2022, I set myself a clear challenge: **take an existing multi-system PHP project and rebuild it as a modern Flask application in Python**. The result of that effort is the repository [`Multi-System_Flask-App`](https://github.com/Michael679089/Multi-System_Flask-App) — a learning-focused project that explores how to migrate real functionality from one tech stack to another while preserving (and improving) the core behavior.
