@@ -1,0 +1,611 @@
+{
+  "scanDirectories": "posts,spec",
+  "ignoreUnderscoreFiles": false,
+  "enableMDXSupport": false,
+  "keywordProperty": "",
+  "descriptionProperty": "description",
+  "titleProperty": "title",
+  "useFilenameAsTitle": false,
+  "slugProperty": "",
+  "useFilenameAsSlug": true,
+  "parentFolderSlugFilename": "index",
+  "titlePrefixSuffix": "",
+  "checkTitleLength": true,
+  "checkHeadingOrder": true,
+  "checkAltText": true,
+  "checkImageNaming": true,
+  "checkBrokenLinks": true,
+  "checkExternalLinks": true,
+  "enableExternalLinkButton": true,
+  "enableExternalLinkVaultCheck": false,
+  "checkNakedLinks": true,
+  "checkContentLength": true,
+  "checkDuplicateContent": false,
+  "checkReadingLevel": true,
+  "checkPotentiallyBrokenLinks": true,
+  "checkPotentiallyBrokenEmbeds": true,
+  "useNoteTitles": true,
+  "skipH1Check": true,
+  "publishMode": true,
+  "defaultSort": "issues-desc",
+  "showRibbonIcon": true,
+  "minContentLength": 300,
+  "keywordDensityMin": 1,
+  "keywordDensityMax": 2,
+  "duplicateThreshold": 80,
+  "cachedGlobalResults": [
+    {
+      "file": "posts/expressive-code.md",
+      "displayName": "Expressive Code Example",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 23 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 55 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 180 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://expressive-code.com/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 10,
+              "searchText": "https://expressive-code.com/",
+              "context": "---\n\nHere, we'll explore how code blocks look using [Expressive Code](https://expressive-code.com/). The provided examples are based on the official documentation, which you can refer to for further details.\n\n## Expressive Code"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://expressive-code.com/key-features/syntax-highlighting/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 16,
+              "searchText": "https://expressive-code.com/key-features/syntax-highlighting/",
+              "context": "### Syntax Highlighting\n\n[Syntax Highlighting](https://expressive-code.com/key-features/syntax-highlighting/)\n\n#### Regular syntax highlighting"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://expressive-code.com/key-features/frames/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 45,
+              "searchText": "https://expressive-code.com/key-features/frames/",
+              "context": "### Editor & Terminal Frames\n\n[Editor & Terminal Frames](https://expressive-code.com/key-features/frames/)\n\n#### Code editor frames"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://expressive-code.com/key-features/text-markers/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 88,
+              "searchText": "https://expressive-code.com/key-features/text-markers/",
+              "context": "### Text & Line Markers\n\n[Text & Line Markers](https://expressive-code.com/key-features/text-markers/)\n\n#### Marking full lines & line ranges"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://expressive-code.com/key-features/word-wrap/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 217,
+              "searchText": "https://expressive-code.com/key-features/word-wrap/",
+              "context": "### Word Wrap\n\n[Word Wrap](https://expressive-code.com/key-features/word-wrap/)\n\n#### Configuring word wrap per block"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://expressive-code.com/plugins/collapsible-sections/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 257,
+              "searchText": "https://expressive-code.com/plugins/collapsible-sections/",
+              "context": "## Collapsible Sections\n\n[Collapsible Sections](https://expressive-code.com/plugins/collapsible-sections/)\n\n```js collapse={1-5, 12-14, 21-24}"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://expressive-code.com/plugins/line-numbers/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 288,
+              "searchText": "https://expressive-code.com/plugins/line-numbers/",
+              "context": "## Line Numbers\n\n[Line Numbers](https://expressive-code.com/plugins/line-numbers/)\n\n### Displaying line numbers per block"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 15.0 (Moderately difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 50,
+      "issuesCount": 0,
+      "warningsCount": 5,
+      "noticesCount": 7
+    },
+    {
+      "file": "posts/draft.md",
+      "displayName": "Draft Example",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 13 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "No description found in properties",
+            "suggestion": "Add description to properties",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 61 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 7.2 (Easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/Flask Projects.md",
+      "displayName": "Flask Projects",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 14 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 0 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": false,
+            "message": "\"Conclusion\" (H1) appears after H2",
+            "suggestion": "H1 should be the first heading or not used at all",
+            "severity": "warning",
+            "position": {
+              "line": 278,
+              "searchText": "# Conclusion",
+              "context": "---\n\n# Conclusion\n\nThe `Multi-System_Flask-App` project represents a **concrete step in evolving a multi-feature web application from PHP to Python**, using Flask as a modern, lightweight framework."
+            }
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 1591 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://github.com/Michael679089/Multi-System_Flask-App",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 18,
+              "searchText": "https://github.com/Michael679089/Multi-System_Flask-App",
+              "context": "# Rebuilding a Multi-System Web App with Flask: A Journey from PHP to Python\n\nIn 2022, I set myself a clear challenge: **take an existing multi-system PHP project and rebuild it as a modern Flask application in Python**. The result of that effort is the repository [`Multi-System_Flask-App`](https://github.com/Michael679089/Multi-System_Flask-App) — a learning-focused project that explores how to migrate real functionality from one tech stack to another while preserving (and improving) the core behavior.\n\nThis blog-style write‑up walks through:"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 11.4 (Moderately easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 55,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 1
+    },
+    {
+      "file": "spec/about.md",
+      "displayName": "spec/about.md",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 5 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "No properties found",
+            "suggestion": "Add properties with description property",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 35 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://github.com/saicaca/fuwari",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 2,
+              "searchText": "https://github.com/saicaca/fuwari",
+              "context": "# About\nThis is the demo site for [Fuwari](https://github.com/saicaca/fuwari).\n\n::github{repo=\"saicaca/fuwari\"}"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://unsplash.com/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 7,
+              "searchText": "https://unsplash.com/",
+              "context": "\n> ### Sources of images used in this site\n> - [Unsplash](https://unsplash.com/)\n> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)\n> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.pixiv.net/artworks/108916539",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 8,
+              "searchText": "https://www.pixiv.net/artworks/108916539",
+              "context": "> ### Sources of images used in this site\n> - [Unsplash](https://unsplash.com/)\n> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)\n> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.pixiv.net/users/93273965",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 8,
+              "searchText": "https://www.pixiv.net/users/93273965",
+              "context": "> ### Sources of images used in this site\n> - [Unsplash](https://unsplash.com/)\n> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)\n> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://civitai.com/posts/586908",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 9,
+              "searchText": "https://civitai.com/posts/586908",
+              "context": "> - [Unsplash](https://unsplash.com/)\n> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)\n> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://civitai.com/user/Rabbit_YourMajesty",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 9,
+              "searchText": "https://civitai.com/user/Rabbit_YourMajesty",
+              "context": "> - [Unsplash](https://unsplash.com/)\n> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)\n> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 13.4 (Moderately difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 50,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 6
+    }
+  ],
+  "lastScanTimestamp": 1770996930207,
+  "showNotices": true
+}

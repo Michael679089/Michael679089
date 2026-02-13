@@ -1,0 +1,8 @@
+{
+  "atDirectives": [
+    { "name": "@apply", "description": "Tailwind directive to inline existing utility classes into your own custom CSS." },
+    { "name": "@tailwind" },
+    { "name": "@layer" },
+    { "name": "@config" }
+  ]
+}

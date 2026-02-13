@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "_bases/Home.base",
+                "viewName": "Posts"
+              },
+              "pinned": true,
+              "icon": "lucide-home",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "a787a663f0890968",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/My Flask Project that contains Multiple Apps.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "My Flask Project that contains Multiple Apps"
+            }
+          },
+          {
+            "id": "2f371470ceeeb7e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "spec/about.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "about"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "de18447653aedda3",
+    "type": "split",
+    "children": [
+      {
+        "id": "8c5dcc3ede48769d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a40f0f61ee2545c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "7db02f3c19d5caff",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3d85a12a7820c6ba",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "efe1340c1416d824",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed9613b613b39f99",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d038e0f45521cc48",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "315baf371cd933a6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "54af628b2a4a1db1",
+            "type": "leaf",
+            "state": {
+              "type": "seo-current-panel",
+              "state": {},
+              "icon": "search-check",
+              "title": "SEO audit: current note"
+            }
+          },
+          {
+            "id": "ce745a429223f53c",
+            "type": "leaf",
+            "state": {
+              "type": "seo-global-panel",
+              "state": {},
+              "icon": "search-check",
+              "title": "SEO audit: vault"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "astro-composer:Edit astro config": false,
+      "switcher:Open quick switcher": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "seo:Open SEO audit panel": false,
+      "astro-composer:Open project terminal": false,
+      "home-base:Open home base": false,
+      "obsidian-git:Open Git source control": false,
+      "zenmode:Toggle zen mode": false,
+      "obsidian42-brat:BRAT": false,
+      "omnisearch:Omnisearch": false
+    }
+  },
+  "active": "2f371470ceeeb7e8",
+  "lastOpenFiles": [
+    "_bases/Home.base",
+    "posts/My Flask Project that contains Multiple Apps.md",
+    "posts/draft.md",
+    "posts/expressive-code.md",
+    "posts/guide/index.md"
+  ]
+}
