@@ -6,7 +6,7 @@ image: ""
 tags:
   - programming/framework/Flask
 category: Programming/Framework/Flask
-draft: true
+draft: false
 aliases:
   - Flask Projects
 ---
