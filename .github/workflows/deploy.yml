@@ -27,6 +27,12 @@ jobs:
           role-to-assume: arn:aws:iam::941116500527:role/DynamoDB_ReadAllOnlyAccess_for_project-lists_nosql_table
           aws-region: us-east-1
       
+      - name: Debug AWS credentials
+        run: |
+          echo "AWS_ROLE_ARN=$AWS_ROLE_ARN"
+          echo "AWS_WEB_IDENTITY_TOKEN_FILE=$AWS_WEB_IDENTITY_TOKEN_FILE"
+          echo "AWS_REGION=$AWS_REGION"
+      
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
