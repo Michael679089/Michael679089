@@ -9,4 +9,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  site: 'https://michael679089.github.io',
+  base: '/Michael679089'
 });
