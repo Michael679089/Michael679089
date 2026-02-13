@@ -1,20 +1,48 @@
 ---
+import Layout from "../layouts/layout.astro";
+
+import {getData} from "../data-access/data.ts";
+
+
+
+console.log( await getData() );
+
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Hello and welcome to my portfolio</h1>
 
-		<h1> Hello? </h1>
 
-		<iframe src="https://getnotionembed.com/embed/05b610af-8204-49c4-bc51-a1e1a83b0195?mode=Light" style="width: 100%; height: calc(-200px + 100vh);"></iframe>
-	</body>
-</html>
+
+<Layout>
+	<div class="text-3xl md:text-6xl font-bold font-flecham">Michael Jacob M. Delos Santos</div>
+	<h2 class="text-xl md:text-2xl font-flecham">Software Engineer</h2>
+
+	<div class="grid md:grid-cols-3 gap-4 | text-center | outline py-1">
+		<div class="outline">
+			09173980858
+		</div>
+		<div class="outline">
+			Santa Maria,Bulacan
+		</div>
+		<div class="outline">
+			@michaeljacobmds
+		</div>
+	</div>
+
+	<div class="my-10" />
+
+	<div class="grid grid-cols-3 gap-x-5"> 
+		<!-- Display here my projects -->
+		<div class="grid grid-cols-2 border">
+			<div>
+				<p> My Flask Projects </p>
+				<a href="">Link to github</a>
+			</div>
+			<div>
+				<img>
+			</div>
+		</div>
+	</div>
+
+</Layout>
+

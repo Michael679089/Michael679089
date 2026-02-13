@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@font-face {
+	font-family: "FlechaM";
+	src: url("./fonts/flecha-font-family/FlechaM-Medium.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("./fonts/poppins-latin-400-normal.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+.font-poppins {
+	font-family: "Poppins", sans-serif;
+}
+
+.font-flecham {
+	font-family: "FlechaM", serif;
+}

@@ -35,6 +35,15 @@
       "width": 600,
       "height": 88,
       "text": "    // Enable strict mode. This enables a few options at a time, see https://www.typescriptlang.org/tsconfig#strict for a list.\n"
+    },
+    {
+      "type": "text",
+      "id": "ca4d4855-6a3f-49fa-85e2-9be3a38d34c5",
+      "x": 140,
+      "y": 740,
+      "width": 433,
+      "height": 116,
+      "text": "# How to Deploy to Github\n\nhttps://docs.astro.build/en/guides/deploy/github/"
     }
   ],
   "edges": [
