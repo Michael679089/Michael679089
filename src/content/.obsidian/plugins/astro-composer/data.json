@@ -1,0 +1,56 @@
+{
+  "defaultTemplate": "---\ntitle: \"{{title}}\"\npublished: \"\"\ntags: []\ncategory: \"\"\ndraft: true\n---\n",
+  "autoInsertProperties": true,
+  "dateFormat": "YYYY-MM-DD",
+  "enableCopyHeadingLink": true,
+  "copyHeadingLinkFormat": "astro",
+  "addTrailingSlashToLinks": true,
+  "enableOpenTerminalCommand": true,
+  "terminalProjectRootPath": "../../",
+  "terminalApplicationName": "",
+  "enableTerminalDebugLogging": false,
+  "enableTerminalRibbonIcon": true,
+  "enableOpenConfigFileCommand": true,
+  "configFilePath": "../../astro.config.mjs",
+  "enableConfigRibbonIcon": true,
+  "contentTypes": [
+    {
+      "id": "content-type-1770991083673-6risgja70",
+      "name": "Posts",
+      "folder": "posts",
+      "linkBasePath": "/posts/",
+      "template": "---\ntitle: \"{{title}}\"\npublished: \"\"\ntags: []\ncategory: \"\"\ndraft: true\n---\n",
+      "enabled": true,
+      "creationMode": "file",
+      "indexFileName": "index",
+      "ignoreSubfolders": false,
+      "enableUnderscorePrefix": false
+    },
+    {
+      "id": "content-type-1770991083673-7j7agjldc",
+      "name": "Spec",
+      "folder": "spec",
+      "linkBasePath": "/spec/",
+      "template": "---\n---\n",
+      "enabled": true,
+      "creationMode": "file",
+      "indexFileName": "index",
+      "ignoreSubfolders": false,
+      "enableUnderscorePrefix": false
+    }
+  ],
+  "migrationCompleted": true,
+  "helpButtonReplacement": {
+    "enabled": true,
+    "commandId": "astro-composer:edit-astro-config",
+    "iconId": "rocket"
+  },
+  "showMdxFilesInExplorer": false,
+  "processBackgroundFileChanges": true,
+  "syncDraftDate": false,
+  "draftProperty": "",
+  "draftLogic": "true-is-draft",
+  "publishDateField": "",
+  "updateModifiedDate": false,
+  "modifiedDateField": ""
+}
