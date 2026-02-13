@@ -10,7 +10,6 @@ draft: false
 aliases:
   - Flask Projects
 ---
-
 **Source:** [Multi-System_Flask-App on GitHub](https://github.com/Michael679089/Multi-System_Flask-App)
 
 
