@@ -11,12 +11,32 @@ export const getStaticPaths = (async ({ paginate }: { paginate: (data: any[], op
 });
 // https://github.com/withastro/astro/issues/6507#issuecomment-1489916992
 
-const { page } = Astro.props;
+export interface PageProp {
+    data: any[];
+    [key: string]: any;
+}
 
-const len = page.data.length;
+const { page } = Astro.props as { page: PageProp };
+
+let len;
+try {
+    len = page.data.length;
+} catch(error: any) {
+    console.error("Error accessing page data:", error);
+    len = 0; // Fallback to 0 if there's an error
+};
 ---
 
 <MainGridLayout>
     <PostPage page={page}></PostPage>
-    <Pagination class="mx-auto onload-animation" page={page} style={`animation-delay: calc(var(--content-delay) + ${(len)*50}ms)`}></Pagination>
+    <Pagination
+        class="mx-auto onload-animation"
+        page={{
+            ...page,
+            currentPage: page.currentPage ?? 1,
+            lastPage: page.lastPage ?? 1,
+            url: page.url ?? ''
+        }}
+        style={`animation-delay: calc(var(--content-delay) + ${(len)*50}ms)`}
+    ></Pagination>
 </MainGridLayout>

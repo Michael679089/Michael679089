@@ -20,8 +20,9 @@ interface Props {
   style?: string;
 }
 
+import { type PageProp } from "../../pages/[...page].astro";
 
-const { page, style } = Astro.props;
+const { page, style } = Astro.props as unknown as { page: PageProp, style?: string };
 
 const HIDDEN = -1;
 
@@ -38,15 +39,15 @@ while (0 < l - 1 && r + 1 <= page.lastPage && count + 2 <= VISIBLE) {
 	count += 2;
 	l--;
 	r++;
-}
+};
 while (0 < l - 1 && count < VISIBLE) {
 	count++;
 	l--;
-}
+};
 while (r + 1 <= page.lastPage && count < VISIBLE) {
 	count++;
 	r++;
-}
+};
 
 let pages: number[] = [];
 if (l > 1) pages.push(1);
