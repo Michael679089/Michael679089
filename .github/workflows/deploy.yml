@@ -25,7 +25,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::941116500527:role/DynamoDB_ReadAllOnlyAccess_for_project-lists_nosql_table
-          aws-region: us-east-1
+          aws-region: ap-southeast-2
       
       - name: Debug AWS credentials
         run: |
