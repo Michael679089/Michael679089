@@ -60,6 +60,10 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9 # or your preferred version
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
