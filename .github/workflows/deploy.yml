@@ -31,8 +31,12 @@ jobs:
       
       - name: Build Astro site
         run: npm run build
-
-  deploy:
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: dist/
     needs: build
     runs-on: ubuntu-latest
     environment:
