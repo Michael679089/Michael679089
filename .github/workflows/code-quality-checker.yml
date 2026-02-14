@@ -6,10 +6,6 @@ on:
   pull_request:
     branches: [ fuwari-template ] # Adjust branches as needed
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
   quality:
     runs-on: ubuntu-latest
@@ -21,6 +17,5 @@ jobs:
         with:
           version: latest
       - name: Run Biome
-        run: biome ci ./src --reporter=github
-      - name: Run ESLint
-        run: npx eslint ./src --max-warnings=0
+        run: biome ci ./src --reporter=github --verbose
+

@@ -5,6 +5,7 @@ import type { APIContext } from "astro";
 import MarkdownIt from "markdown-it";
 import sanitizeHtml from "sanitize-html";
 import { siteConfig } from "@/config";
+import type { Posts_Props } from "./[...page].astro";
 
 const parser = new MarkdownIt();
 
@@ -23,14 +24,14 @@ export async function GET(context: APIContext) {
 		title: siteConfig.title,
 		description: siteConfig.subtitle || "No description",
 		site: context.site ?? "https://fuwari.vercel.app",
-		items: blog.map((post) => {
+		items: blog.map((post: Posts_Props) => {
 			const content =
 				typeof post.body === "string" ? post.body : String(post.body || "");
 			const cleanedContent = stripInvalidXmlChars(content);
 			return {
 				title: post.data.title,
 				pubDate: post.data.published,
-				description: post.data.description || "",
+				description: post.data.decsription || "",
 				link: url(`/posts/${post.slug}/`),
 				content: sanitizeHtml(parser.render(cleanedContent), {
 					allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),

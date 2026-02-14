@@ -1,30 +1,139 @@
 ---
+import { ContentSchemaContainsSlugError } from "node_modules/astro/dist/core/errors/errors-data";
 import Pagination from "../components/control/Pagination.astro";
 import PostPage from "../components/PostPage.astro";
 import { PAGE_SIZE } from "../constants/constants";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 import { getSortedPosts } from "../utils/content-utils";
 
-export const getStaticPaths = (async ({ paginate }: { paginate: (data: any[], options: any) => any }) => {
+export const getStaticPaths = async ({
+	paginate,
+}: {
+	paginate: (data: Posts_Props[], options: options) => any;
+}) => {
+	const pageSize = PAGE_SIZE;
 	const allBlogPosts = await getSortedPosts();
-	return paginate(allBlogPosts, { pageSize: PAGE_SIZE });
-});
+
+	return paginate(allBlogPosts, { pageSize });
+};
 // https://github.com/withastro/astro/issues/6507#issuecomment-1489916992
 
-export interface PageProp {
-    data: any[];
-    [key: string]: any;
+console.log(
+	"What's inside getStaticPaths?",
+	await getStaticPaths({ paginate: (data, options) => ({ data, options }) }),
+);
+
+interface options {
+	pageSize: number;
 }
 
-const { page } = Astro.props as { page: PageProp };
+export interface Posts_Props {
+	id: string;
+	/* @jsxImportSource astro */
+	map(
+		arg0: (post: Posts_Props) => {
+			title: string;
+			pubDate: Date;
+			description: string;
+			link: string;
+			content: string;
+		},
+	):
+		| import("@astrojs/rss").RSSFeedItem[]
+		| Record<string, (...args: unknown[]) => Promise<any>>;
+	/* @jsxImportSource astro */
+	map(
+		arg0: (post: Posts_Props) => {
+			title: string;
+			pubDate: Date;
+			description: string;
+			link: string;
+			content: string;
+		},
+	):
+		| import("@astrojs/rss").RSSFeedItem[]
+		| Record<string, (...args: unknown[]) => Promise<any>>;
+	/* @jsxImportSource astro */
+	map(
+		arg0: (post: Posts_Props) => {
+			title: string;
+			pubDate: Date;
+			description: string;
+			link: string;
+			content: string;
+		},
+	):
+		| import("@astrojs/rss").RSSFeedItem[]
+		| Record<string, (...args: unknown[]) => Promise<any>>;
+	/* @jsxImportSource astro */
+	map(
+		arg0: (post: Posts_Props) => {
+			title: string;
+			pubDate: Date;
+			description: string;
+			link: string;
+			content: string;
+		},
+	):
+		| import("@astrojs/rss").RSSFeedItem[]
+		| Record<string, (...args: unknown[]) => Promise<any>>;
+	data: {
+		title: string;
+		published: Date;
+		draft: boolean;
+		decsription: string;
+		tags: string[];
+		category: string | null;
+		lang: string;
+		prevTitle: string | null;
+		prevSlug: string | null;
+		nextTitle: string | null;
+		nextSlug: string | null;
+	};
+	body: string;
+	filePath: string;
+	digest: string;
+	rendered: {
+		html: string;
+		metadata: any;
+	};
+	collection: string;
+	slug: string;
+	render: any;
+}
 
-let len;
+export interface PageProp {
+	page: {
+		data: Posts_Props[];
+		start: number;
+		end: number;
+		size: number;
+		total: number;
+		currentPage: 1;
+		lastPage: 1;
+		url: {
+			current: string;
+			next: string | undefined;
+			prev: string | undefined;
+			first: string | undefined;
+			last: string | undefined;
+		};
+	};
+}
+
+const { page } = Astro.props as PageProp;
+
+let len: number;
 try {
-    len = page.data.length;
-} catch(error: any) {
-    console.error("Error accessing page data:", error);
-    len = 0; // Fallback to 0 if there's an error
-};
+	len = page.data.length;
+} catch (error: unknown) {
+	if (error instanceof TypeError) {
+		console.error("Error accessing page data:", error);
+	} else {
+		console.error("Unexpected error:", error);
+	}
+	len = 0;
+}
 ---
 
 <MainGridLayout>

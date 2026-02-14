@@ -15,12 +15,12 @@ import {
 import Layout from "./Layout.astro";
 
 interface Props {
-    title?: string;
-    banner?: string;
-    description?: string;
-    lang?: string;
-    setOGTypeArticle?: boolean;
-    headings?: any[];
+	title?: string;
+	banner?: string;
+	description?: string;
+	lang?: string;
+	setOGTypeArticle?: boolean;
+	headings?: { depth: number; slug: string; text: string }[];
 }
 
 const {

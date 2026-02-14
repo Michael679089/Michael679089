@@ -3,14 +3,18 @@ import { siteConfig } from "../../config";
 import { url } from "../../utils/url-utils";
 
 interface Props {
-  class?: string;
-  headings?: any;
+	class?: string;
+	headings?: { depth: number; slug: string; text: string }[];
 }
 
 let { headings = [] } = Astro.props;
 
 let minDepth = 10;
-for (const heading of headings) {
+for (const heading of headings as {
+	depth: number;
+	slug: string;
+	text: string;
+}[]) {
 	minDepth = Math.min(minDepth, heading.depth);
 }
 

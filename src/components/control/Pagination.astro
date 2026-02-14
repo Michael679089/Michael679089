@@ -3,26 +3,26 @@ import { Icon } from "astro-icon/components";
 import { url } from "../../utils/url-utils";
 
 interface PaginationPage {
-  currentPage: number;
-  lastPage: number;
-  url: {
-    current: string;
-    prev?: string;
-    next?: string;
-    first?: string;
-    last?: string;
-  };
+	currentPage: number;
+	lastPage: number;
+	url: {
+		current: string;
+		prev?: string;
+		next?: string;
+		first?: string;
+		last?: string;
+	};
 }
 
 interface Props {
-  page: PaginationPage;
-  class?: string;
-  style?: string;
+	page: PaginationPage;
+	class?: string;
+	style?: string;
 }
 
 import { type PageProp } from "../../pages/[...page].astro";
 
-const { page, style } = Astro.props as unknown as { page: PageProp, style?: string };
+const { page } = Astro.props as PageProp;
 
 const HIDDEN = -1;
 
@@ -32,31 +32,38 @@ const ADJ_DIST = 2;
 const VISIBLE = ADJ_DIST * 2 + 1;
 
 // for test
-let count = 1;
-let l = page.currentPage;
-let r = page.currentPage;
-while (0 < l - 1 && r + 1 <= page.lastPage && count + 2 <= VISIBLE) {
-	count += 2;
-	l--;
-	r++;
-};
-while (0 < l - 1 && count < VISIBLE) {
-	count++;
-	l--;
-};
-while (r + 1 <= page.lastPage && count < VISIBLE) {
-	count++;
-	r++;
-};
-
+// Simplified pagination logic
 let pages: number[] = [];
-if (l > 1) pages.push(1);
-if (l === 3) pages.push(2);
-if (l > 3) pages.push(HIDDEN);
-for (let i = l; i <= r; i++) pages.push(i);
-if (r < page.lastPage - 2) pages.push(HIDDEN);
-if (r === page.lastPage - 2) pages.push(page.lastPage - 1);
-if (r < page.lastPage) pages.push(page.lastPage);
+const showAdj = 2; // pages to show adjacent to current
+const { currentPage, lastPage } = page;
+
+// Always show first page
+if (currentPage > 1) pages.push(1);
+// Ellipsis if gap between first and current-2
+if (currentPage - showAdj > 2) pages.push(HIDDEN);
+
+// Show adjacent pages before current
+for (let i = Math.max(2, currentPage - showAdj); i < currentPage; i++) {
+	pages.push(i);
+}
+
+// Show current page
+pages.push(currentPage);
+
+// Show adjacent pages after current
+for (
+	let i = currentPage + 1;
+	i <= Math.min(lastPage - 1, currentPage + showAdj);
+	i++
+) {
+	pages.push(i);
+}
+
+// Ellipsis if gap between current+2 and last
+if (currentPage + showAdj < lastPage - 1) pages.push(HIDDEN);
+
+// Always show last page if not current
+if (currentPage < lastPage) pages.push(lastPage);
 
 const getPageUrl = (p: number) => {
 	if (p === 1) return "/";
@@ -64,7 +71,7 @@ const getPageUrl = (p: number) => {
 };
 ---
 
-<div class:list={[className, "flex flex-row gap-3 justify-center"]} style={style}>
+<div class:list={[className, "flex flex-row gap-3 justify-center"]}>
     <a href={page.url.prev || ""} aria-label={page.url.prev ? "Previous Page" : null}
        class:list={["btn-card overflow-hidden rounded-lg text-[var(--primary)] w-11 h-11",
            {"disabled": page.url.prev == undefined}
