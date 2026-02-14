@@ -5,8 +5,7 @@
 	"scripts": {
 		"dev": "astro dev",
 		"check": "astro check",
-		"build": "astro build && pagefind --site dist && pnpm postbuild:pagefind",
-		"postbuild:pagefind": "node scripts/postbuild-copy-pagefind.js",
+		"build": "astro build && pagefind --site dist",
 		"preview": "astro preview",
 		"astro": "astro",
 		"type-check": "tsc --noEmit --isolatedDeclarations",
