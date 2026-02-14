@@ -56,7 +56,7 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar:
-		"https://indigo-historic-salmon-454.mypinata.cloud/ipfs/bafybeieuzju7bnankbjh5fxtdjbuzuvhvsw6dkfvbryg3tyf3o4bf2jdaq", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		"https://indigo-historic-salmon-454.mypinata.cloud/ipfs/bafybeihvuiy2uljaih64xgac5cyitggfkh56n44xgqrgeerrclsxc5e4py", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Michael Jacob M. Delos Santos",
 	bio: "Software Engineer | Tech Enthusiast | Blogger",
 	links: [
