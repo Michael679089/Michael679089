@@ -1,5 +1,5 @@
 {
-  "projectRoot": "../../",
+  "projectRoot": "C:\\Users\\M\\Documents\\astro-framework\\michaels-portfolio",
   "configFilePath": "../../astro.config.mjs",
   "contentTypes": [
     {
@@ -42,7 +42,7 @@
   "preset": "vanilla",
   "presetName": "",
   "presetsRepo": "davidvkimball/vault-cms-presets",
-  "enableWYSIWYG": false,
+  "enableEditingToolbar": false,
   "enabledPlugins": [
     "astro-composer",
     "bases-cms",
@@ -233,8 +233,15 @@
     "gitIgnoreConfigured": true,
     "viteIgnoreConfigured": true
   },
+  "gitConfig": {
+    "enabled": false,
+    "isPrivate": true,
+    "branchName": "main",
+    "autoConfigureObsidianGit": true
+  },
   "runWizardOnStartup": false,
   "wizardCompleted": true,
+  "enableWYSIWYG": false,
   "enableMdxSupport": false,
   "defaultContentTypeId": "content-type-1770994111758-ds51qubbj"
 }
