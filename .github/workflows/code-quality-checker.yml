@@ -22,3 +22,5 @@ jobs:
           version: latest
       - name: Run Biome
         run: biome ci ./src --reporter=github
+      - name: Run ESLint
+        run: npx eslint ./src --max-warnings=0
