@@ -5,7 +5,9 @@ description: ""
 image: ""
 tags:
   - programming/framework/Flask
-category: Programming/Framework/Flask
+  - project/programming
+  - project/school
+category: Project
 draft: false
 aliases:
   - Flask Projects
