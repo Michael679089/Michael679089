@@ -8,7 +8,7 @@
   "mobilePullAction": "command-palette:open",
   "trashOption": "system",
   "alwaysUpdateLinks": true,
-  "useMarkdownLinks": true,
+  "useMarkdownLinks": false,
   "mobileToolbarCommands": [
     "editor:undo",
     "editor:redo",
@@ -40,5 +40,6 @@
   "mobileQuickRibbonItem": "",
   "vimMode": false,
   "readableLineLength": true,
-  "defaultViewMode": "source"
+  "defaultViewMode": "source",
+  "showUnsupportedFiles": true
 }

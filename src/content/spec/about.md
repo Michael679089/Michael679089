@@ -5,6 +5,13 @@ A very passionate Software Developer
 
 portfolio website: https://michael679089.github.io/Michael679089
 
+
+# Contact:
+* Linkedin: https://www.linkedin.com/in/michael-jacob-delos-santos-996168230/
+
+
+---
+
 > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
 > - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)

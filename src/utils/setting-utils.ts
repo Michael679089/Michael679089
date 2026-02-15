@@ -8,7 +8,7 @@ import { expressiveCodeConfig } from "@/config";
 import type { LIGHT_DARK_MODE } from "@/types/config";
 
 export function getDefaultHue(): number {
-	const fallback = "250";
+	const fallback = "0";
 	const configCarrier = document.getElementById("config-carrier");
 	return Number.parseInt(configCarrier?.dataset.hue || fallback, 10);
 }
@@ -19,7 +19,14 @@ export function getHue(): number {
 }
 
 export function setHue(hue: number): void {
-	localStorage.setItem("hue", String(hue));
+	const prevState = localStorage.getItem("hue");
+	if (prevState === String(hue)) {
+		console.log("Hue is the same");
+		localStorage.removeItem("hue");
+		return;
+	}
+
+	localStorage.setItem("hue", hue.toString());
 	const r = document.querySelector(":root") as HTMLElement;
 	if (!r) {
 		return;
