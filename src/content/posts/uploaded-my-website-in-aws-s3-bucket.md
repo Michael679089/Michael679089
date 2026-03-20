@@ -1,5 +1,5 @@
 ---
-title: uploaded-my-website-in-aws-s3-bucket
+title: Uploaded my website in AWS S3 Bucket
 published: 2026-02-15
 description: ""
 image: https://res.cloudinary.com/michaelpersonal/image/upload/v1771134436/Obsidian/tkbrxbl5xiro70vaiees.png

@@ -604,6 +604,190 @@
       "issuesCount": 0,
       "warningsCount": 4,
       "noticesCount": 6
+    },
+    {
+      "file": "posts/tutorial-on-how-to-create-a-portfolio-website-like-this.md",
+      "displayName": "Tutorial on how to create a portfolio website like this",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": true,
+            "message": "Good title length: 55 characters",
+            "severity": "info"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": true,
+            "message": "Good description length: 145 characters",
+            "severity": "info"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 257 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": false,
+            "message": "Naked link found: https://astro.build/themes/1/.",
+            "suggestion": "Convert to markdown link format: [link text](url)",
+            "severity": "warning",
+            "position": {
+              "line": 21,
+              "searchText": "https://astro.build/themes/1/.",
+              "context": "---\n# Step 1: Get an Astro Theme\nGet an Astro theme website here: https://astro.build/themes/1/.\n\n# Step 2: Follow this tutorial"
+            }
+          },
+          {
+            "passed": false,
+            "message": "Naked link found: https://docs.astro.build/en/guides/deploy/github/",
+            "suggestion": "Convert to markdown link format: [link text](url)",
+            "severity": "warning",
+            "position": {
+              "line": 27,
+              "searchText": "https://docs.astro.build/en/guides/deploy/github/",
+              "context": "Usually the astro theme has a .github folder which handles the way the portfolio website becomes a static page in github pages, if not please follow this tutorial:\n\nhttps://docs.astro.build/en/guides/deploy/github/\n\n# Step 3: Download Vault CMS"
+            }
+          },
+          {
+            "passed": false,
+            "message": "Naked link found: https://vaultcms.org/",
+            "suggestion": "Convert to markdown link format: [link text](url)",
+            "severity": "warning",
+            "position": {
+              "line": 31,
+              "searchText": "https://vaultcms.org/",
+              "context": "# Step 3: Download Vault CMS\n\nAfter you’re done setting up your astro website, install Vault CMS, here’s their official website: https://vaultcms.org/\n\nAt the root of the project do this command:"
+            }
+          },
+          {
+            "passed": false,
+            "message": "Naked link found: https://obsidian.md/download",
+            "suggestion": "Convert to markdown link format: [link text](url)",
+            "severity": "warning",
+            "position": {
+              "line": 51,
+              "searchText": "https://obsidian.md/download",
+              "context": "# Step 4: Download Obsidian (if you don’t have one)\n- We will need to add content via obsidian text editor, which is free forever, but it’s closed source. \n- Download obsidian here: https://obsidian.md/download\n\n# Step 5: Open Obsidian at the src/content folder"
+            }
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://astro.build/themes/1/.",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 21,
+              "searchText": "https://astro.build/themes/1/.",
+              "context": "---\n# Step 1: Get an Astro Theme\nGet an Astro theme website here: https://astro.build/themes/1/.\n\n# Step 2: Follow this tutorial"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://docs.astro.build/en/guides/deploy/github/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 27,
+              "searchText": "https://docs.astro.build/en/guides/deploy/github/",
+              "context": "Usually the astro theme has a .github folder which handles the way the portfolio website becomes a static page in github pages, if not please follow this tutorial:\n\nhttps://docs.astro.build/en/guides/deploy/github/\n\n# Step 3: Download Vault CMS"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://vaultcms.org/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 31,
+              "searchText": "https://vaultcms.org/",
+              "context": "# Step 3: Download Vault CMS\n\nAfter you’re done setting up your astro website, install Vault CMS, here’s their official website: https://vaultcms.org/\n\nAt the root of the project do this command:"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://obsidian.md/download",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 51,
+              "searchText": "https://obsidian.md/download",
+              "context": "# Step 4: Download Obsidian (if you don’t have one)\n- We will need to add content via obsidian text editor, which is free forever, but it’s closed source. \n- Download obsidian here: https://obsidian.md/download\n\n# Step 5: Open Obsidian at the src/content folder"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 7.5 (Easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 71,
+      "issuesCount": 0,
+      "warningsCount": 6,
+      "noticesCount": 4
     }
   ],
   "lastScanTimestamp": 1770996930207,

@@ -48,11 +48,13 @@ properties:
   note.title:
     displayName: Title
 views:
-  - type: bases-cms
+  - type: cms
     name: Posts
     filters:
       and:
         - file.folder.startsWith("posts")
+    order:
+      - file.name
     sort:
       - property: published
         direction: DESC
@@ -73,7 +75,7 @@ views:
     showDraftStatus: true
     draftStatusProperty: note.draft
     draftStatusReverse: false
-  - type: bases-cms
+  - type: cms
     name: Pages
     filters:
       and:
@@ -93,7 +95,7 @@ views:
     dateProperty: file.ctime
     showTags: false
     showDraftStatus: false
-  - type: bases-cms
+  - type: cms
     name: Vault CMS Guide
     filters:
       and:

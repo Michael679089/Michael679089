@@ -270,5 +270,13 @@
       ],
       "key": "O"
     }
+  ],
+  "number-headings-obsidian:number-headings": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "End"
+    }
   ]
 }
