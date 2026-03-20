@@ -60,11 +60,11 @@ As you can see from the image, if you're closer to the mall, it will likely incr
 
 # 5 How Did I Prepared the Data?
 
-## 5.1.1 Step 1: Plan on how to Web Scrape Data
+## 5.1 Step 1: Plan on how to Web Scrape Data
 **Problem:** When finding for info of hotels for Philippines, I searched first in Kaggle but most of the hotel data I found were from hotels located around Europe. When I searched on the internet, I couldn't find a decent dataset that I could use to get hotel data. That's when I decided to scrape data from Google Maps instead.  
 
-## 5.1.2 Step 2: Get the Tools Required
-### 5.1.2.1 Tools used:
+## 5.2 Step 2: Get the Tools Required
+### 5.2.1 Tools used:
 Here are the tools that I have used to scrape real-time data of Hotel Prices in Google Maps:
 1. **Instant Data Scraper** (FREE)
 	1. An extension available in the google chrome extension store.
@@ -84,13 +84,13 @@ Here are the tools that I have used to scrape real-time data of Hotel Prices in 
 4. **Playwright:**
 	1. I used this because I ran out of tokens using Air Scraper so I scraped Google Map's data instead, specifically for ratings and number of reviews.
 
-## 5.1.3 Step 3: Scrape Google Map for 30 minutes
+## 5.3 Step 3: Scrape Google Map for 30 minutes
 I just searched for nearby hotels in Google Map and it showed me a pagination of hotels that my Instant Data Scraper can scrape to.
 
 ![*This is Google Maps with Instant Data Scraper Enabled.*](https://res.cloudinary.com/michaelpersonal/image/upload/v1774012441/Obsidian/wxacl7x6rse7wwef7ztl.png)
 *This is Google Maps with Instant Data Scraper Enabled.*
 
-## 5.1.4 Step 4: Make the JuPyTer project and then automate scraping of booking hotels
+## 5.4 Step 4: Make the JuPyTer project and then automate scraping of booking hotels
 Using Air Scraper requires payment. 
 
 So I paid around $9 for Air Scraper's Pro Plan
@@ -99,7 +99,7 @@ I started gathering data around April 18, 2026. I have achieved around 7,000 row
 
 After I gathered data from Air Scraper using JuPyTer, I noticed that some of the rows didn't contain ratings, num_of_reviews or prices, they're either zero or null. I tried to run the JuPyTer program multiple times hoping the Air Scraper doesn't give me a timeout. Most of the rows got their prices right but some didn't get ratings and num_of_reviews. I then heard that playwright can scrape data from the web and pretend it's like a user, and that's what I used. 
 
-## 5.1.5 Step 5: Setup a worker function to make Playwright get Data
+## 5.5 Step 5: Setup a worker function to make Playwright get Data
 Some rows may contain missing reviews and ratings using the values from the rows you scraped from Google Docs. With Playwright, we will search in Google Maps, go directly to the hotels page in Google Maps and get the visible stars and number of reviews there.
 
 The code here is used to get rating and number of reviews from a direct page of the google hotel place. 
@@ -394,11 +394,11 @@ inputDF.to_excel(output_filename, index=False) # type: ignore
 print(f"🎉 Scraping complete! Data saved to {output_filename}")
 ```
 
-## 5.1.6 Step 6: Start Automating and Collecting Data
+## 5.6 Step 6: Start Automating and Collecting Data
 After the functions above have been declared and set up. You can start collecting now.
 
-## 5.1.7 Step 7: Double Check and Clean your Rows 
-### 5.1.7.1 Step 7.1: Splitting the Data
+## 5.7 Step 7: Double Check and Clean your Rows 
+### 5.7.1 Step 7.1: Splitting the Data
 There was just one problem, the amenities column is just one big strings of multiple amenities. If there was a way to split those values separated by commas, we can accurately determine if a hotel's room option contains a certain amenity via true / false on their own columns. That's what I did with JuPyTer.
 
 ```python
@@ -437,7 +437,7 @@ This is the code I used to split the amenities into their own separate columns, 
 > If the automation wasn't able to fill the missing attributes in the rows, I have to manually search for it in Google or try to get information quickly via Gemini AI (Google's AI which also has access to Google's Hotel API). 
 
 ---
-## 5.2 Model Selection
+# 6 Model Selection
 And now we can finally look into the JuPyTer Program.
 
 I was deciding on what I should use, I tested with both Decision Tree and Random Forests. Random Forests provides a better answer.
@@ -457,7 +457,7 @@ There are four types of outputs here.
 4. Lastly I outputted the correlation matrix for myself to see which columns are driving the prices up and which columns are driving the prices down. 
 
 
-### 5.2.1 Cross Validation
+## 6.1 Cross Validation
 - Here's to prove that Random Forest is better than Decision Tree
 
 **Decision Tree**
@@ -468,7 +468,7 @@ There are four types of outputs here.
 
 - The Chosen Model will be the Random Forest due to it's higher percent score in prediction.
 
-### 5.2.2 Applying both Models to test their Performance
+## 6.2 Applying both Models to test their Performance
 - For this one, I wanted to see what's the performance score when I try to apply the data to the remaining 30% percent of the training data that wasn't part of the 70% training data.
 - Here are my Percent scores when I applied the model to unseen data.
 
@@ -482,7 +482,7 @@ There are four types of outputs here.
 
 Random Forest Wins!
 
-## 5.3 Data Gathered
+# 7 Data Gathered
 
 This aggregated table tells us that this is how hotels should be priced based on their area and their room type. Unfortunately not all premium type rooms are included in all three areas but the most commons ones are:
 1. Room (which is standard Room)
@@ -549,9 +549,9 @@ This aggregated table tells us that this is how hotels should be priced based on
 
 %% my sheet: https://docs.google.com/spreadsheets/d/1A4TdJQI-dHGTnPOWh0-cKxIXkXBp_ZR1WP7EJfcNUgA/edit?gid=0#gid=0 %%
  
-## 5.4 Which attributes affect the price a lot?
+## 7.1 Which attributes affect the price a lot?
 
-### 5.4.1 Increases the price:
+### 7.1.1 Increases the price:
 | amenity_fitness_center                    | price | 0.3954972263976445  |
 | ----------------------------------------- | ----- | ------------------- |
 | is_a_resort                               | price | 0.3839405545822225  |
@@ -625,7 +625,7 @@ The strongest positive drivers are luxury or exclusivity-related amenities. The 
 
 Other notable price boosters include **private beach access**, **poolside bars**, **steam rooms**, and **wedding facilities**. These all suggest exclusivity, convenience, or luxury experiences, which justify higher pricing.
 
-### 5.4.2 Decreases the price
+### 7.1.2 Decreases the price
 
 | amenity_outdoor_pool          | price | -0.34823685416882183 |
 |-------------------------------|-------|----------------------|
@@ -673,7 +673,7 @@ Interestingly, some common amenities are associated with **lower prices**, likel
 Other negative drivers include **safe deposit boxes**, **massage services**, **iron availability**, and **business centers**. These are functional or expected amenities, so they don’t justify higher pricing.
 
 
-## 5.5 Conclusion
+# 8 Conclusion
 
 **To answer the core question:** _What is the optimal price for different room types across Urban, Suburban, and Rural areas?_ The predictive insights generated via Altair RapidMiner serve as a data-driven guide. Hotel owners and operators can use this framework to set competitive, marketable rates that reflect actual market behavior rather than relying on simple averages or guesswork.
 
@@ -707,4 +707,4 @@ Other negative drivers include **safe deposit boxes**, **massage services**, **i
 ![](https://res.cloudinary.com/michaelpersonal/image/upload/v1774009939/Obsidian/utg6smekg3cmspld3szs.png)
 
 ---
-# 6 Thank You! For Listening!
+# 9 Thank You! For Listening!
