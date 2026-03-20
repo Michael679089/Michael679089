@@ -9,8 +9,7 @@ category: Project
 draft: false
 aliases:
 ---
-Link to my PDF:
-- IPFS from Pinata: https://indigo-historic-salmon-454.mypinata.cloud/ipfs/bafybeie37e6xikbi7ue5sw6hngyuu6ucd4o24n6quzob3rki7cdh6bkiwi
+Link to my PDF (IPFS from Pinata): https://indigo-historic-salmon-454.mypinata.cloud/ipfs/bafybeidz544kyrmux3xgwnp3kbdyrgstjzj6nudaxxrtd5cwee7f5aus7q
 
 ---
 # 1 Machine Learning in Hotel Room Pricing
@@ -20,10 +19,10 @@ March 20, 2026
 
 
 # 2 Problem
-With the Philippines still being a popular tourist destination for Westerners, venturing into hotels offers a promising business opportunity.
+- With the Philippines still being a popular tourist destination for Westerners, venturing into hotels offers a promising business opportunity.
+- **Goal**: What's the best price for room types in Urban, Suburban, and Rural Areas?
 
-**Goal**: What's the best price for room types in Urban, Suburban, and Rural Areas?
-
+---
 # 3 Dataset Description:
 We have used various sources of data from data scrapers, google maps and via popular hotel booking sites like Agoda.com and Booking.com
 
@@ -86,6 +85,8 @@ Here are the tools that I have used to scrape real-time data of Hotel Prices in 
 
 ## 5.3 Step 3: Scrape Google Map for 30 minutes
 I just searched for nearby hotels in Google Map and it showed me a pagination of hotels that my Instant Data Scraper can scrape to.
+
+I started web-scraping Google Maps on April 18, 2026 then stopped today at March 20, 2026. So my dataset is very recent, and updated. 
 
 ![*This is Google Maps with Instant Data Scraper Enabled.*](https://res.cloudinary.com/michaelpersonal/image/upload/v1774012441/Obsidian/wxacl7x6rse7wwef7ztl.png)
 *This is Google Maps with Instant Data Scraper Enabled.*
@@ -708,3 +709,6 @@ Other negative drivers include **safe deposit boxes**, **massage services**, **i
 
 ---
 # 9 Thank You! For Listening!
+
+checkout my PDF file related to this post: https://indigo-historic-salmon-454.mypinata.cloud/ipfs/bafybeidz544kyrmux3xgwnp3kbdyrgstjzj6nudaxxrtd5cwee7f5aus7q
+

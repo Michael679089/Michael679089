@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "39ad40cea8c6a77a",
+            "id": "742dd2da8ce4f0e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -162,7 +162,7 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "39ad40cea8c6a77a",
+  "active": "742dd2da8ce4f0e0",
   "lastOpenFiles": [
     "_bases/Home.base",
     "posts/machine-learning-in-hotel-room-pricing.md",
