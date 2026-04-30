@@ -3,5 +3,6 @@
   "showFileExplorerIcon": true,
   "focusLevel": "parent",
   "customFolderPath": "",
-  "hideAncestorFolders": false
+  "hideAncestorFolders": false,
+  "autoHidePaths": []
 }

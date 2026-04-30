@@ -1,16 +1,20 @@
 ---
-title: "Simple Ninja Game I created"
-published: 2026-03-27
-description: ""
+title: Simple Ninja Game I created
+published: 2021-01-22
+description: A PC game that represents a ninja in its training
 image: ""
-tags: []
-category: ""
-draft: true
+tags:
+  - game-development
+category: Project
+draft: false
 ---
+My training Project Game, this was made for my Game Development Course during Senior High School. The premise of the game is that a ninja is doing training in a hill. He must overcome obstacles to destroy the training dummies. 
 
+Here are the demos of the Training Ninja Game Below:
 
-![](https://bafybeiaj673ywmc2bgxsn2at6ygmnnwyxujfytqhl7sbyfeskhhgvcvone.ipfs.dweb.link?filename=ninja%201.mp4)
+<video src="https://res.cloudinary.com/michaelpersonal/video/upload/v1777535884/Obsidian/unqhaeocamevuophuutu.mp4" controls></video>
 
-![](https://bafybeicwub5hm7ksjx3yd2fuxrdm5suckj5pchpffmn6cd4y65yvpcdpqe.ipfs.dweb.link?filename=ninja%202.mp4)
+<video src="https://res.cloudinary.com/michaelpersonal/video/upload/v1777535868/Obsidian/mb0fayozjfalebi8xbdc.mp4" controls></video>
 
-![](https://bafybeibatwtzswbsvo4f2ljkp5sfflrjac2rzw7kg7nohjwm3nxbbscuti.ipfs.dweb.link?filename=ninja%203.mp4)
+<video src="https://res.cloudinary.com/michaelpersonal/video/upload/v1777535868/Obsidian/qr4eennaevlwf631ug7z.mp4" controls></video>
+

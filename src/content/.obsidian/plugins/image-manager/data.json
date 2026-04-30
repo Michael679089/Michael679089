@@ -15,7 +15,7 @@
   "enablePropertyPaste": true,
   "propertyLinkFormat": "obsidian",
   "customPropertyLinkFormat": "{image-url}",
-  "defaultPropertyName": "banner",
+  "defaultPropertyName": "image",
   "defaultIconPropertyName": "icon",
   "altTextProperty": "",
   "autoConvertRemoteImages": false,
@@ -34,7 +34,7 @@
   "appendReferral": false,
   "banner": {
     "properties": {
-      "imageProperty": "banner",
+      "imageProperty": "image",
       "iconProperty": "icon"
     },
     "desktop": {
