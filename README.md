@@ -7,3 +7,4 @@
 ---
 profile website was created with help of fuwari.
 
+also this project is created using PNPM.

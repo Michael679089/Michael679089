@@ -17,5 +17,7 @@
 		"source.fixAll": "explicit",
 		"source.organizeImports.biome": "always"
 	},
-	"css.customData": ["./css.customData.json"]
+	"css.customData": [
+		"./css.customData.json"
+	]
 }

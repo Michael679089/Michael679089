@@ -1,4 +1,7 @@
-defaultView: "Posts"
+defaultView: Posts
+filters:
+  and:
+    - file.ext == "md"
 formulas:
   Slug: |-
     if(file.folder == "posts", "/posts/" + file.name.replace(".md", ""), 
@@ -21,11 +24,6 @@ formulas:
         "root"
       )
     )
-
-filters:
-  and:
-    - file.ext == "md"
-
 properties:
   file.fullname:
     displayName: Full File Name
@@ -49,10 +47,9 @@ properties:
     displayName: Tags
   note.title:
     displayName: Title
-
 views:
   - type: cms
-    name: "Posts"
+    name: Posts
     filters:
       and:
         - file.folder.startsWith("posts")
@@ -61,14 +58,14 @@ views:
     sort:
       - property: published
         direction: DESC
-    imageFormat: "cover"
+    imageFormat: cover
     showDate: true
     customizeNewButton: true
-    newNoteLocation: "posts"
-    fallbackToEmbeds: "if-empty"
+    newNoteLocation: posts
+    fallbackToEmbeds: if-empty
     propertyDisplay1: file.fullname
     showTextPreview: true
-    propertyLabels: "above"
+    propertyLabels: above
     titleProperty: note.title
     dateProperty: note.published
     descriptionProperty: note.description
@@ -79,27 +76,27 @@ views:
     draftStatusProperty: note.draft
     draftStatusReverse: false
   - type: cms
-    name: "Pages"
+    name: Pages
     filters:
       and:
         - file.folder.startsWith("spec")
     sort:
       - property: file.ctime
         direction: DESC
-    imageFormat: "cover"
+    imageFormat: cover
     showDate: true
     customizeNewButton: true
-    newNoteLocation: "spec"
-    fallbackToEmbeds: "if-empty"
+    newNoteLocation: spec
+    fallbackToEmbeds: if-empty
     propertyDisplay1: file.fullname
     showTextPreview: true
-    propertyLabels: "above"
+    propertyLabels: above
     titleProperty: file.fullname
     dateProperty: file.ctime
     showTags: false
     showDraftStatus: false
   - type: cms
-    name: "Vault CMS Guide"
+    name: Vault CMS Guide
     filters:
       and:
         - file.folder == "/"
@@ -107,13 +104,13 @@ views:
     sort:
       - property: file.ctime
         direction: DESC
-    fallbackToEmbeds: "never"
+    fallbackToEmbeds: never
     propertyDisplay1: file.fullname
     showTextPreview: true
-    imageFormat: "none"
+    imageFormat: none
     showDate: false
     showDraftStatus: false
-    propertyLabels: "above"
+    propertyLabels: above
     titleProperty: note.title
     propertyLayout12SideBySide: false
     propertyLayout34SideBySide: false
