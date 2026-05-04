@@ -44,7 +44,7 @@ export const siteConfig: SiteConfig = {
 export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
-		LinkPreset.Archive,
+		LinkPreset.Timeline,
 		LinkPreset.About,
 		{
 			name: "GitHub",
